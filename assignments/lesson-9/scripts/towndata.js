@@ -5,18 +5,15 @@
 var cardHolder = document.getElementById("townDiv");
 
 var townList = new Array("Preston", "Soda Springs", "Fish Haven");
-var townImgList = '[["name":"Preston","imgSrc":"images/summer-mom-n-daughter.jpg"],["name":"Soda Springs","imgSrc":"images/blue-flower-raincoat.jpg"],["name":"Fish Haven","imgSrc":"images/snow-n-glove.jpg"]]',
 var requestURL = 'https://juk18001.github.io/assignments/lesson-9/towndata.json ';
 
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
-
 request.send();
 
 request.onload = function () {
     var varJSON = request.response;
-
     createTownDivs(varJSON);
 }
 
@@ -46,24 +43,25 @@ function createTownDivs(textJSON) {
             var pAvgRain = document.createElement('p');
             pAvgRain.textContent = 'Average Rainfall: ' + objJSON.averageRainfall + '"';
             //img
-            for (var j = 0; j < townImgList.length; j++) {
-                if (objJSON.name = townImgList[j].name) {
-                    var iTown = document.createElement('img');
-                    iTown.src = townImgList[j].imgSrc;
-                    iTown.alt = objJSON.name;
-                } else {
-                    var iTown = document.createElement('img');
-                    iTown.src = "images/beach-mom-n-daughter.jpg";
-                    iTown.alt = "cool photo";
-                }
+            var imgDiv = document.createElement("div");
+            imgDiv.className= "imgDiv";
+
+            if (objJSON.name == "Preston") {
+                var iTown = document.createElement('img');
+                iTown.src = "images/summer-mom-n-daughter.jpg";
+            } else {
+                var iTown = document.createElement('img');
+                iTown.src = "images/blue-flower-raincoat.jpg";
             }
+
+            iTown.alt = objJSON.name;
 
             divCard.appendChild(h2TownName);
             divCard.appendChild(h3Motto);
             divCard.appendChild(pYear);
             divCard.appendChild(pPopulation);
             divCard.appendChild(pAvgRain);
-        //    divCard.appendChild(iTown);
+            divCard.appendChild(iTown);
             cardHolder.appendChild(divCard);
         }
     }

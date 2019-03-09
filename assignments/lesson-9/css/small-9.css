@@ -138,7 +138,7 @@ form input.submitBtn {
   background-color: #9c89b8;
   color: #f0e6ef;
   border-radius: 1rem;
-  padding: .75rem ;
+  padding: .75rem;
   margin: 2rem auto;
   width: 96%;
   max-width: 22rem;
@@ -154,11 +154,12 @@ form input.submitBtn {
   width: 100%;
   height: 45px;
   background: #f0e6ef;
-  outline:none;
+  outline: none;
   opacity: 0.7;
   -webkit-transition: .2s;
   transition: opacity .2s;
 }
+
 .slider:hover {
   opacity: 1;
 }
@@ -177,14 +178,24 @@ form input.submitBtn {
   background: #9c89b8;
   cursor: pointer;
 }
+
 /*------------------------------------------------------------------*/
 
 #info-div {
   display: block;
-  margin: 15px auto ;
+  margin: 15px auto;
   background-color: #9c89b8;
   padding-left: 15px;
   text-align: center;
+  color: #efc3e6;
+}
+
+#info-div h1 {
+  color:  #efc3e6;
+}
+
+#info-div p {
+  color:  #efc3e6;
 }
 
 #townDiv {
@@ -195,24 +206,29 @@ form input.submitBtn {
 
 .card {
   position: relative;
-  width: 400px;
+  width: 320px;
   min-width: 320px;
   height: 500px;
   border: 1px solid #9c89b8;
   background-image: radial-gradient(circle, #efc3e6, #efcce9, #efd5eb, #f0dded, #f0e6ef);
-  margin:15px;
+  margin: 15px;
 }
 
 .card img {
-  position: absolute;bottom: 0;
+  position: absolute;
+  bottom: 0;
 }
 
-.card h3 { font-style: italic; font-size: 1em; font-weight: normal;}
-
-#info-div h1, h2, h3, p {
-  color: #efc3e6;
+.card h3 {
+  font-style: italic;
+  font-size: 1em;
+  font-weight: normal;
 }
-.card h1, h2, h3, h4, p { color:#9c89b8 }
+
+
+.card h1, h2, h3, h4, p {
+  color: #9c89b8
+}
 
 @media (max-width:600px) {
   .navigation li:first-child {

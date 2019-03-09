@@ -5,7 +5,8 @@
     <title>Bikinis or Raincoats? Home Page</title>
     <meta charset="utf-8">
     <style>
-        @import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+        @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Oswald');
+
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
@@ -37,24 +38,26 @@
             <nav>
                 <ul class="navigation">
                     <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="preston-8.html">Preston</a></li>
+                    <li class="selected"><a href="index.html">Home</a></li>
+                    <li><a href="preston-9.html">Preston</a></li>
                     <li><a href="sodasprings.html">Soda Springs</a></li>
                     <li><a href="fishhaven.html">Fish Haven</a></li>
-                    <li class="selected"><a href="stormcenter.html">Storm Center</a></li>
-                    <li><a href="gallery-8.html">Gallery</a></li>
+                    <li><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a href="gallery-9.html">Gallery</a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
-           <div id="info-div">
+           <div class='divinfo' id="info-div">
                <h1>Deciding what to wear today?</h1>
-               <h2>Let's look at the weather to see what makes sense</h2>
+               <p>Let's look at the weather to see what makes sense</p>
            </div>
+
            <div id="townDiv">
                
            </div>
+
         </main>
         <footer>
             <div class="footerText"><span id="currentDate"></span></div>
