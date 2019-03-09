@@ -179,6 +179,41 @@ form input.submitBtn {
 }
 /*------------------------------------------------------------------*/
 
+#info-div {
+  display: block;
+  margin: 15px auto ;
+  background-color: #9c89b8;
+  padding-left: 15px;
+  text-align: center;
+}
+
+#townDiv {
+  display: flex;
+  margin: 20px;
+  padding: 20px;
+}
+
+.card {
+  position: relative;
+  width: 400px;
+  min-width: 320px;
+  height: 500px;
+  border: 1px solid #9c89b8;
+  background-image: radial-gradient(circle, #efc3e6, #efcce9, #efd5eb, #f0dded, #f0e6ef);
+  margin:15px;
+}
+
+.card img {
+  position: absolute;bottom: 0;
+}
+
+.card h3 { font-style: italic; font-size: 1em; font-weight: normal;}
+
+#info-div h1, h2, h3, p {
+  color: #efc3e6;
+}
+.card h1, h2, h3, h4, p { color:#9c89b8 }
+
 @media (max-width:600px) {
   .navigation li:first-child {
     display: block;
