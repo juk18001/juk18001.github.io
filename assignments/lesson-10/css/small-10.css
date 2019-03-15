@@ -16,6 +16,9 @@ header img, .motto {
   vertical-align: middle;
   margin: 10px;
 }
+.motto h1, .motto h2 {
+  color: #f0e6ef
+}
 
 h1, h2, h3, h4, h5, h6 {
   color: #2a2b31;
@@ -45,7 +48,7 @@ nav {
   background-color: #efc3e6;
 }
 
-.thanks h1, h2, h3, p {
+.thanks.thanks h1, .thanks h2, .thanks h3, .thanks p {
   display: block;
   text-align: center;
   margin-right: auto;
@@ -70,15 +73,16 @@ nav {
 
 .navigation li a {
   display: block;
-  color: #f0e6ef;
+  color: #fff;
   padding: .75rem;
   text-align: center;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .navigation li a:hover {
-  color: #9c89b8;
   background-color: #fff;
+  color:#9c89b8;
   font-weight: 700;
 }
 
@@ -200,8 +204,9 @@ form input.submitBtn {
 
 #townDiv {
   display: flex;
-  margin: 20px;
+  margin: 20px auto;
   padding: 20px;
+  justify-content: center;
 }
 
 .card {
