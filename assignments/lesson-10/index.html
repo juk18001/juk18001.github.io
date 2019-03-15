@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bikinis or Raincoats? Home Page</title>
+    <meta charset="utf-8">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Oswald');
+
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small-10.css">
+    <link rel="stylesheet" href="css/medium-10.css">
+    <link rel="stylesheet" href="css/large-10.css">
+
+    <script src="scripts/hamburger.js"></script>
+    <script>
+        function adjustSeverity(severity) {
+            document.getElementById('severityValue').innerHTML = severity;
+        }
+    </script>
+
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <div class="logoDiv">
+                <img id="logo" src="images/bikini.png" alt="logo">
+
+                <div class="motto">
+                    <h1>Bikinis or Raincoats?</h1>
+                    <h2> What are we wearing today? </h2>
+                </div>
+            </div>
+
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li class="selected"><a href="index.html">Home</a></li>
+                    <li><a href="preston-10.html">Preston</a></li>
+                    <li><a href="sodasprings.html">Soda Springs</a></li>
+                    <li><a href="fishhaven.html">Fish Haven</a></li>
+                    <li><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a href="gallery-10.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+           <div class='divinfo' id="info-div">
+               <h1>Deciding what to wear today?</h1>
+               <p>Let's look at the weather to see what makes sense</p>
+           </div>
+
+           <div id="townDiv">
+               
+           </div>
+
+        </main>
+        <footer>
+            <div class="footerText"><span id="currentDate"></span></div>
+
+
+            <div>
+                <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"
+                        title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"
+                        title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/towndata.js"></script>
+</body>
+
+</html>
