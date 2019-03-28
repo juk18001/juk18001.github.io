@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Preston Town Page</title>
+    <meta charset="utf-8">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Oswald');
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <script src="scripts/hamburger.js"></script>
+    <script>
+        function adjustSeverity(severity) {
+            document.getElementById('severityValue').innerHTML = severity;
+        }
+    </script>
+
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <div class="logoDiv">
+                <img id="logo" src="images/bikini.png" alt="logo">
+
+                <div class="motto">
+                    <h1>Bikinis or Raincoats?</h1>
+                    <h2> What are we wearing today? </h2>
+                </div>
+            </div>
+
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="preston.html">Preston</a></li>
+                    <li><a href="sodasprings.html">Soda Springs</a></li>
+                    <li><a href="fishhaven.html">Fish Haven</a></li>
+                    <li class="selected"><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <form method="GET" action="thanks.html">
+                <fieldset id="user">
+                    <legend>
+                        User Info
+                    </legend>
+                    <label class="top">full name *
+                        <input type="text" name="fullName" required pattern="[A-za-z].{5,}">
+                    </label>
+                    <label class="top">email <input type="email" name="email"
+                            placeholder="fabulous@nowhere.com"></label>
+                    <label class="top">phone number<input type="tel" name="telephone"></label>
+                    <label class="top">zip code<input type="number" name="zip"></label>
+                    <div>Are you in danger?</div>
+                    <label class="sbs"> Yes <input type="radio" id="rb_yes" name="danger"></label>
+                    <label class="sbs"> Maybe <input type="radio" id="rb_maybe" name="danger"></label>
+                    <label class="sbs"> No <input type="radio" id="rb_no" name="danger"></label>
+                </fieldset>
+
+                <fieldset id="storm">
+                    <legend>
+                        Storm Info
+                    </legend>
+                    <label class="top">storm date<input type="date" name="stormDate"></label>
+                    <label class="top">storm type<input type="text" name="inputStormType" list="datalistStormType">
+                        <datalist id="datalistStormType">
+                            <option value="Flash Flood">
+                            <option value="Hail">
+                            <option value="Hurricane">
+                            <option value="Thunderstorm">
+                            <option value="Tornado">
+                        </datalist></label>
+                    <label class="top2">storm severity <input type="range" name="inputSeverity" value="5" min="1"
+                            max="10" step="1" class="slider" id="myRange" oninput="adjustSeverity(this.value)"
+                            onchange="adjustSeverity(this.value)">Severity is <span id="severityValue">5</span></label>
+
+                    <label class="top">storm region
+                        <select id="inputRegion" name="stormRegion">
+                            <option value="">Select Region</option>
+                            <option value="preston">Preston</option>
+                            <option value="soda">Soda Spring</option>
+                            <option value="fish">Fish Haven</option>
+                            <option value="">Select Region</option>
+                        </select>
+                    </label>
+
+                    <label class="top">What else can you tell us?<textarea name="comments" rows="5"
+                            cols="45"></textarea></label>
+                </fieldset>
+
+                <input type="submit" value="Send Storm Info" class="submitBtn">
+            </form>
+
+        </main>
+        <footer>
+            <div class="footerText"><span id="currentDate"></span></div>
+
+
+            <div>
+                <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a
+                        href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a
+                        href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0"
+                        target="_blank">CC 3.0 BY</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

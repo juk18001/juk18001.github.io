@@ -1,0 +1,16 @@
+{
+    "towns": [
+      {
+        "name": "Preston",
+        "imgSrc": "images/summer-mom-n-daughter.jpg"
+      },
+      {
+        "name": "Soda Springs",
+        "imgSrc": "images/blue-flower-raincoat.jpg"
+      },
+      {
+        "name": "Fish Haven",
+        "imgSrc": "images/snow-n-glove.jpg"
+      }
+    ]
+  }

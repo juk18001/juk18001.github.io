@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Soda Springs Town Page</title>
+    <meta charset="utf-8">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Oswald');
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <script src="scripts/hamburger.js"></script>
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <div class="logoDiv">
+                <img id="logo" src="images/bikini.png" alt="logo">
+
+                <div class="motto">
+                    <h1>Bikinis or Raincoats?</h1>
+                    <h2> What are we wearing today? </h2>
+                </div>
+            </div>
+
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="preston.html">Preston</a></li>
+                    <li class="selected"><a href="sodasprings.html">Soda Springs</a></li>
+                    <li><a href="fishhaven.html">Fish Haven</a></li>
+                    <li><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class='townname'>
+                <h1>Soda Springs</h1>
+            </div>
+
+            <div class="herodiv">
+                <img src="images/preston-hero.jpeg" alt="hero image" srcset="images/preston-hero-500.jpeg 600w, images/preston-hero-1200.jpeg 1200w" sizes="(max-width: 600px) 500px, (max-width:1200px) 1100px"
+                >
+                <section class="weathersummary">
+                    <h3>Weather Summary</h3>
+                    <p>Currently: <span id="currentCond" class="weathervalue">Sunny</span></p>
+                    <p>High: <span id="highTemp" class="weathervalue">36 &#176;F</span></p>
+                    <p>Wind Chill: <span id="windChill" class="weathervalue">30 &#176;F</span></p>
+                    <p>Humidity: <span id ="humidity" class="weathervalue">45%</span></p>
+                    <p>Wind Speed: <span id="windSpeed" class="weathervalue">5 mph</span></p>
+                </section>
+            </div>
+
+            <div class="forecast">
+                <h1>5 Day Forecast</h1>
+
+                <div class="grid-container">
+                    <div class="grid-item"><span id="dofw1"></span></div>
+                    <div class="grid-item"><span id="dofw2"></span></div>
+                    <div class="grid-item"><span id="dofw3"></span></div>
+                    <div class="grid-item"><span id="dofw4"></span></div>
+                    <div class="grid-item"><span id="dofw5"></span></div>
+                    <div class="grid-item" id="dicon1"></div>
+                    <div class="grid-item" id="dicon2"></div>
+                    <div class="grid-item" id="dicon3"></div>
+                    <div class="grid-item" id="dicon4"></div>
+                    <div class="grid-item" id="dicon5"></div>
+                    <div class="grid-item"><span id="dtemp1">40</span>&#176; F</div>
+                    <div class="grid-item"><span id="dtemp2">40</span>&#176; F</div>
+                    <div class="grid-item"><span id="dtemp3">40</span>&#176; F</div>
+                    <div class="grid-item"><span id="dtemp4">40</span>&#176; F</div>
+                    <div class="grid-item"><span id="dtemp5">40</span>&#176; F</div>
+                </div>
+            </div>
+            <section id="article-section">
+                <div class="leftColumn">
+                    <h1>Things to get dressed up for:</h1>
+                    <div id="event-div"></div>
+                </div>
+                <div class="rightColumn">
+                    <img id="articleimage" src="images/fall-open-overcoat.jpg" alt="articleimage">
+                </div>
+            </section>
+
+            <section id="map-section">
+                <h1>To help you get to where you are going:</h1>
+                <div id="map-div">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23471.978813135738!2d-111.60628161484543!3d42.661411516725884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8755968bb0047ae5%3A0x9d3970a1a6df8e12!2sSoda+Springs%2C+ID+83276!5e0!3m2!1sen!2sus!4v1553399309751" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+             </section>
+        </main>
+        <footer>
+            <div class="footerText"><span id="currentDate"></span></div>
+
+
+            <div>
+                <div>Icons made by <a href="https://www.flaticon.com/authors/baianat" title="Baianat">Baianat</a> from <a href="https://www.flaticon.com/" 		    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 		    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+                <div> Weather data sourced from <a href="https://openweathermap.org/" title="Open Weather Maps">Open
+                    Weather Maps</a> </div>
+            </div>
+        </footer>
+    </div>
+    <script src="scripts/currentdate.js"></script>
+    <script id="forecastScript" data-town="Soda Springs" src='scripts/forecastUpdates.js'></script>
+    <script id='townEventScript' data-town="Soda Springs" src='scripts/displayTownEvents.js'></script>
+</body>
+
+</html>
