@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Temple Inn & Suites Reservations</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/small.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Satisfy" rel="stylesheet">
+    <script src="scripts/hamburger.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="banner-div">
+            <div class="motto">
+                <h1>Temple Inn & Suites</h1>
+                <h2>A Home Away from Home</h2>
+            </div>
+            <div>
+                <img src="images/frankfurt-germany-temple-320.jpg" alt="Frankfurt Germany Temple">
+            </div>
+        </div>
+        <div>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="temples.html">Temples</a></li>
+                    <li class="selected"><a href="reservations.html">Reservations</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <div>
+            <h4>Make Your Reservation Today!</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean gravida lorem a ligula luctus, a iaculis
+                dolor gravida. Ut sit amet lectus tincidunt, viverra lacus quis, accumsan nisi. Etiam ut sapien dapibus,
+                bibendum mi ac, cursus urna. Donec sed arcu orci. Ut eu malesuada nibh. Praesent metus lorem, laoreet
+                vitae odio at, convallis faucibus sem. Nulla condimentum luctus lacus non molestie.</p>
+
+        </div>
+        <form method="GET" action="thanks.html">
+            <fieldset id="guest">
+                <legend>
+                    Guest Info
+                </legend>
+                <label class="top">full name *
+                    <input type="text" name="fullName" required pattern="[A-za-z].{5,}">
+                </label>
+                <label class="top">email <input type="email" name="email" placeholder="fabulous@nowhere.com"></label>
+                <label class="top">phone number<input type="tel" name="telephone"></label>
+                <label class="top">State/Provence<input type="text" name="state"></label>
+                <label class="top">Country<input type="text" name="country"></label>
+            </fieldset>
+
+            <fieldset id="room">
+                <legend>
+                    Room Reservation Info
+                </legend>
+                <label class="top">First Night of Stay<input type="date" name="firstDate"></label>
+                <label class="top">Last Night of Stay<input type="date" name="lastDate"></label>
+                <label class="top">Number of Rooms<input type="number" name="roomCount"></label>
+                <label class="top">Room Type<input type="text" name="inputRoomType" list="datalistRoomType">
+                    <datalist id="datalistRoomType">
+                        <option value="Single King Bed">
+                        <option value="Double Queen Beds">
+                        <option value="Suite">
+                    </datalist></label>
+               
+               
+                <div>Which Temple?</div>
+                <div>
+                    <label class="sbs"> Frankfurt <input type="radio" id="rb_yes" name="danger"></label>
+                    <label class="sbs"> Rome <input type="radio" id="rb_maybe" name="danger"></label>
+                    <label class="sbs"> Washington DC <input type="radio" id="rb_no" name="danger"></label>
+                    <label class="sbs"> London UK <input type="radio" id="rb_no" name="danger"></label>
+                </div>
+
+                <label class="top">Let us know what we can do to make you trip to the temple truly special.<textarea name="comments" rows="5"
+                        cols="45"></textarea></label>
+            </fieldset>
+
+            <input type="submit" value="Reserve Now" class="submitBtn">
+        </form>
+
+
+    </main>
+    <footer>
+        <div class="footerText">
+            <p><span id="currentDate"></span></p>
+        </div>
+
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+{
+    "temples": [
+        {
+            "name": "Frankfurt Temple",
+            "city": "Frankfurt",
+            "closures": [
+                "Monday, 22 April 2019 - Monday, 6 May 2019",
+                "Thursday, 4 July 2019",
+                "Tuesday, 1 October 2019 - Monday, 11 November 2019",
+                "Wednesday, 27 November 2019 (Limited Hours)",
+                "Thursday, 28 November 2019",
+                "Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
+                "Tuesday, 31 December 2019"
+            ],
+            "smallImageLocation": "images\/clouds-winter-320.jpeg"
+        },
+        {
+            "name": "London UK Temple",
+            "city": "London",
+            "closures": [
+                "Monday, 22 April 2019 - Monday, 6 May 2019",
+                "Thursday, 4 July 2019",
+                "Tuesday, 1 October 2019 - Monday, 11 November 2019",
+                "Wednesday, 27 November 2019 (Limited Hours)",
+                "Thursday, 28 November 2019",
+                "Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
+                "Tuesday, 31 December 2019"
+            ],
+            "smallImageLocation": "images\/clouds-winter-320.jpeg"
+        },
+        {
+            "name": "Washington DC Temple",
+            "city": "Washington",
+            "closures": [
+                "Monday, 22 April 2019 - Monday, 6 May 2019",
+                "Thursday, 4 July 2019",
+                "Tuesday, 1 October 2019 - Monday, 11 November 2019",
+                "Wednesday, 27 November 2019 (Limited Hours)",
+                "Thursday, 28 November 2019",
+                "Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
+                "Tuesday, 31 December 2019"
+            ],
+            "smallImageLocation": "images\/clouds-winter-320.jpeg"
+        },
+        {
+            "name": "Rome Italy Temple",
+            "city": "Rome",
+            "closures": [
+                "Monday, 22 April 2019 - Monday, 6 May 2019",
+                "Thursday, 4 July 2019",
+                "Tuesday, 1 October 2019 - Monday, 11 November 2019",
+                "Wednesday, 27 November 2019 (Limited Hours)",
+                "Thursday, 28 November 2019",
+                "Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
+                "Tuesday, 31 December 2019"
+            ],
+            "smallImageLocation": "images\/clouds-winter-320.jpeg"
+        }
+    ]
+}

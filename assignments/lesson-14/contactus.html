@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Temple Inn & Suites</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/small.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Satisfy" rel="stylesheet">
+    <script src="scripts/hamburger.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="motto">
+            <h1>Temple Inn & Suites</h1>
+            <h2>A Home Away from Home</h2>
+        </div>
+
+        <div>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="temples.html">Temples</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li class="selected"><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="contactForm">
+            <h2>
+                Contact Us
+            </h2>
+
+            <form method="get" action="thanks.html">
+
+                <!-- User Info section -->
+                <fieldset id="userInfo">
+                    <legend>Contact Information</legend>
+                    <!-- full name - require - only alpha - min of 5 char -->
+                    <label class="top">Full Name* <input type="text" name="fullName" required
+                            pattern="[A-Za-z].{5,}"></label>
+                    <!-- email - use a placeholder -->
+                    <label class="top">Email <input type="email" name="email" placeholder="someone@nowhere.com"></label>
+                    <!-- phone number - require - tel -->
+                    <label class="top">Phone Number* <input type="tel" name="phoneNum" required></label>
+                    <!-- zip code - required -->
+                    <label class="top">Zip Code <input type="number" name="zipCode" required></label>
+                    <!-- Country - required -->
+                    <label class="top">Country <input type="text" name="country" required></label>
+                </fieldset>
+
+                <!-- Room Info Section -->
+                <fieldset id="inquiryInfo">
+                    <legend class="top">What can we help you with?</legend>
+                    <!-- Check In date - date -->
+                    <!-- additional information or comments - text area -->
+                    <label class="top"> Questions / Comments <textarea name="comments" id="inputComments" rows="4" ,
+                            cols="40"></textarea></label>
+                </fieldset>
+                <!-- form submission button - submit -->
+                <input type="submit" value="Contact Us" class="submitBtn">
+            </form>
+
+            <div>
+                <p>We hail from Maryland, here is a map to our corporate offices:</p>
+                <p>4800 Montgomery Ln #300<br> Bethesda, MD 20814</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.405019705722!2d-77.09772584886262!3d38.98325177945711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800+Montgomery+Ln+%23300%2C+Bethesda%2C+MD+20814!5e0!3m2!1sen!2sus!4v1554922849698!5m2!1sen!2sus"
+                    width="600" height="450" frameborder="0" style="border:0" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footerText">
+            <p><span id="currentDate"></span></p>
+        </div>
+
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+</body>
+
+</html>

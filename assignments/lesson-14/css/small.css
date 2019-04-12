@@ -1,0 +1,257 @@
+body {
+    margin: 0;
+    /* background-color: #f9ecff; */
+}
+
+h1, h3 {
+    font-family: 'Satisfy', cursive;
+    color: #727272;
+}
+
+h2, h4, p {
+    font-family: 'Open Sans', sans-serif;
+    color: #727272;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.25em;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.footerText p {
+    font-size: .8rem;
+}
+
+
+.motto {
+    background-image: url("../images/frankfurt_germany_1440.jpg");   
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.motto h1 {
+    margin:0;
+    padding: 1rem;
+    font-size: 4rem;
+}
+.motto h2 {
+    padding: 1rem;
+}
+
+nav {
+    background-color: #f9ecff;
+}
+
+footer {
+    padding: .4rem;
+}
+
+.navigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation li:first-child {
+    display: none;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation li a {
+    display: block;
+    padding: .75rem;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: #b7f4da;
+    font-family: 'Satisfy', cursive;
+    font-size: 2rem;
+    text-shadow: -1px -1px 0 #727272, 1px -1px 0 #727272, -1px 1px 0 #727272, 1px 1px 0 #727272;
+}
+
+.selected {
+    background-color: #f2d9fb;
+    font-size: 1.5rem;
+}
+
+.selected li a {
+    color: #727272;
+}
+
+.navigation li a:hover {
+    background-color: #f2d9fb;
+    color: #727272;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+}
+
+.submitBtn {
+    display: block;
+    border: none;
+    background-color: #f2d9fb;
+    color: #727272;
+    border-radius: 1rem;
+    padding: .75rem;
+    margin: 2rem auto;
+    width: 96%;
+    max-width: 22rem;
+    box-shadow: 10px 10px 30px #727272;
+}
+
+.temple-div {
+    background-color: #f9ecff;
+    border: 1px solid #727272;
+    max-width: 90%;
+    margin: 10px;
+    border-radius: .5rem;
+    padding: .5rem;
+}
+
+.servList li {
+    list-style: none;
+}
+
+.servList li a {
+    font-size: 2rem;
+}
+
+#temple-list-div h1 {
+    color: #b7f4da;
+    text-shadow: -1px -1px 0 #727272, 1px -1px 0 #727272, -1px 1px 0 #727272, 1px 1px 0 #727272;
+}
+
+
+/*-------------------------------------------------------------------*/
+.contactForm {
+    background-color:#cbffe8;
+    border: 1px solid #727272;
+}
+
+form fieldset {
+    display: block;
+    border: 1px solid #9c89b8;
+    border-radius: 10px;
+    padding: .75rem 2%;
+    background-color:  #f9ecff;
+    width: 98%;
+    max-width: 22rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2rem;
+  }
+  
+  form legend {
+    color: #9c89b8;
+    padding: 0 .5rem;
+  }
+  
+  form label.top, form label.top2, form div {
+    display: block;
+    padding-top: 1rem;
+    color: #9c89b8;
+    font-size: .75rem;
+  }
+  
+  form label.top input, form label.top2 input, form label.top select, form label.top textarea {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: 1px solid #9c89b8;
+    border-radius: 4px;
+    color: #9c89b8;
+    width: 100%;
+    max-width: 20rem;
+    background-color: #FCFAFC;
+  }
+  
+  form label.top input, form label.top select, form label.top textarea {
+    padding: .75rem;
+  }
+  
+  form label.sbs {
+    display: block;
+    padding: .75rem;
+    color: #9c89b8;
+  }
+  
+  form input.submitBtn {
+    display: block;
+    border: none;
+    border-radius: 1rem;
+    padding: .75rem;
+    margin: 2rem auto;
+    width: 96%;
+    max-width: 22rem;
+  }
+  
+  /*------------------------------------------------------------------*/
+
+  .side-by-side {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 15px 15px;
+    margin: 20px;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .right-div ,
+  .left-div {
+    width: 48%;
+    padding: .5em;
+    flex: 1 0 15em;
+    margin: .5em;
+  }
+
+@media (max-width:600px) {
+    .navigation li {
+        display: none;
+    }
+    .navigation li:first-child {
+        display: block;
+    }
+    .navigation li:first-child a {
+        background-color: #727272;
+        color: #cbffe8;
+    }
+}
+
+@media (min-width: 601px) {
+    .navigation li:first-child {
+        display: none;
+    }
+    .navigation li {
+        display: block;
+        flex: 1 1 auto;
+    }
+    .navigation {
+        flex-direction: row;
+    }
+}
+
+.responsive li {
+    display: block;
+}
