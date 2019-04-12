@@ -1,5 +1,5 @@
 //get the json data
-var requestURL = 'https://juk18002.github.io/assignments/lesson-14/data/temples.json';
+var requestURL = 'https://juk18001.github.io/assignments/lesson-14/temples.json';
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
@@ -27,7 +27,7 @@ function updateTemples(textJSON) {
             var ul = document.getElementById('romeClosures')
         }
 
-        var closureObj = objJSON.ordinanceSchedule.baptismal;
+        var closureObj = objJSON.closures;
         for (j = 0; j < closureObj.length; j++) {
             var closureLi = document.createElement('li');
             closureLi.innerHTML = closureObj[j];
