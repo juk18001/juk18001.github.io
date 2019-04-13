@@ -10,6 +10,7 @@ request.onload = function () {
     var varJSON = request.response;
 
     updateTemples(varJSON);
+    updateTemp();
 }
 
 function updateTemples(textJSON) {
